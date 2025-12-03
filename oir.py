@@ -3,6 +3,7 @@ import random
 start = input("Welcome to a Simple Stock Market Simulator. Type <start> to begin. If you would like an explanation on how to play type 'help' ")
 
 if start == "start" or start == "Start":
+    print("Day 1")
     print("Starting wallet: $157")
     print("Beginning stock price: 10")
     wallet = 157
