@@ -2,7 +2,6 @@ import random
 import time
 import sys
 
-
 def slow_print(text, delay=0.15):
     for char in text:
         sys.stdout.write(char)
@@ -37,21 +36,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock}")
+                    stock = stock_purchase
+                    stock_total_price = stock_price * stock
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif stock != 0:
                     slow_print(f"Would you like to buy or sell? ")
                     buy_sell = input('')
                     if buy_sell == "buy" or buy_sell == "Buy":
                         slow_print('how much would you like to buy? ')
                         stock_purchase = int(input(''))
-                        stock = stock_price * stock_purchase
-                        slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                        stock = stock_purchase
+                        stock_total_price = stock * stock_price
+                        slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                     elif buy_sell == "sell" or buy_sell == "Sell":
                         slow_print('how much would you like to sell? ')
                         stock_sell = int(input(''))
                         stock = stock - stock_sell
-                        slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                        slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 1:
             rate = 0.96
@@ -64,21 +65,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 2:
             rate = 0.97
@@ -91,21 +94,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 3:
             rate = 0.98
@@ -118,21 +123,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 4:
             rate = 0.99
@@ -145,21 +152,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 5:
             rate = 1
@@ -172,21 +181,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 6:
             rate = 1.01
@@ -199,21 +210,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 7:
             rate = 1.02
@@ -226,21 +239,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 8:
             rate = 1.03
@@ -253,21 +268,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 9:
             rate = 1.04
@@ -280,21 +297,23 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 10:
             rate = 1.05
@@ -307,24 +326,27 @@ if start == "start" or start == "Start":
                 if yn == "y":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
             elif stock != 0:
                 slow_print(f"Would you like to buy or sell? ")
                 buy_sell = input('')
                 if buy_sell == "buy" or buy_sell == "Buy":
                     slow_print('how much would you like to buy? ')
                     stock_purchase = int(input(''))
-                    stock = stock_price * stock_purchase
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    stock = stock_purchase
+                    stock_total_price = stock * stock_price
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
                 elif buy_sell == "sell" or buy_sell == "Sell":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
-                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock * stock_price}")
+                    slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         slow_print(f'Day {day}')
         day = day + 1
+
 
 
 elif start == "help" or start == "Help":
