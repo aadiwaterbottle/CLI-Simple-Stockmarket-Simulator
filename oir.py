@@ -52,6 +52,9 @@ if start == "start" or start == "Start":
                         slow_print('how much would you like to sell? ')
                         stock_sell = int(input(''))
                         stock = stock - stock_sell
+                        stock_total_price = stock * stock_price
+                        wallet = wallet + stock_total_price
+                        wallet = wallet + stock_total_price
                         slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 1:
@@ -81,6 +84,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 2:
@@ -110,6 +115,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 3:
@@ -139,6 +146,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 4:
@@ -168,6 +177,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 5:
@@ -197,6 +208,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 6:
@@ -226,6 +239,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 7:
@@ -255,6 +270,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 8:
@@ -284,6 +301,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 9:
@@ -313,6 +332,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         if rate == 10:
@@ -342,6 +363,8 @@ if start == "start" or start == "Start":
                     slow_print('how much would you like to sell? ')
                     stock_sell = int(input(''))
                     stock = stock - stock_sell
+                    stock_total_price = stock * stock_price
+                    wallet = wallet + stock_total_price
                     slow_print(f"You now have {stock} stock! This totals at a price of ${stock_total_price}")
 
         slow_print(f'Day {day}')
